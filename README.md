@@ -15,26 +15,35 @@ my_flask_devops_api/
 
 ## Setup Instructions
 
-### 1. Clone the Repository
+Clone the repository:
 
 ```sh
 git clone https://github.com/arezoomohammadi22/Flask_Api.git
 cd Flask_Api
 ```
-create a new user
+
+## API Routes
+
+Create a new user:
+
 ```bash
 curl -X POST http://localhost:5000/users -H "Content-Type: application/json" -d '{"id": 1, "name": "John Doe", "email": "john.doe@example.com"}'
 ```
-Retrieve All Users (GET)
+
+Retrieve All Users (GET):
+
 ```bash
 curl -X GET http://localhost:5000/users
 ```
-Update a Specific User (PUT)
+
+Update a Specific User (PUT):
+
 ```bash
 curl -X PUT http://localhost:5000/users/1 -H "Content-Type: application/json" -d '{"name": "Jane Doe", "email": "jane.doe@example.com"}'
 ```
-Delete a Specific User (DELETE)
+
+Delete a Specific User (DELETE):
+
 ```bash
 curl -X DELETE http://localhost:5000/users/1
 ```
-
